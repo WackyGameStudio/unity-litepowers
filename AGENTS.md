@@ -2,9 +2,7 @@
 
 ## Unity Litepowers Package Work
 
-This package is the token-light successor to `unity-superpowers`.
-
-Do not edit `unity-superpowers` while implementing this package. Use it only as source reference.
+This package provides token-light Unity workflow skills for AI coding agents.
 
 Keep skills concise. Put heavy checklists, templates, MCPForUnity routing, architecture pattern matrices, and verification matrices in `references/`.
 

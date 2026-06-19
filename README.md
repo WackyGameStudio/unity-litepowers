@@ -2,7 +2,7 @@
 
 Unity Litepowers is a token-light Unity skill package for AI coding agents working on commercial-style Unity game projects.
 
-`lite` means token-light, not rigor-light. The package removes blanket TDD and heavy subagent ceremony from `unity-superpowers`, but still requires fresh evidence before completion claims.
+`lite` means token-light, not rigor-light. The package avoids blanket TDD and heavy execution ceremony, but still requires fresh evidence before completion claims.
 
 ## Core Flow
 
