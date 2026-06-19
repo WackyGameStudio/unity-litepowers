@@ -9,6 +9,8 @@
 - Console/import:
 - Manual observation:
 - Pattern/SOLID fit:
+- Implementation log reviewed:
+- Skill feedback updated:
 - Docs updated:
 - Evidence gaps:
 

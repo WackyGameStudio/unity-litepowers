@@ -25,10 +25,12 @@ Before asking completion, exception, or follow-up choice questions, read package
 6. Confirm MCPForUnity target identity is fresh enough for Editor-backed claims.
 7. Record console/import/test/smoke/manual observation evidence.
 8. Update feature `verification.md`.
-9. Update `docs/litepowers/project-map.md` from actual implementation.
+9. Distill reusable feature `implementation-log.md` lessons into `docs/litepowers/skill-feedback.md`.
+10. Update `docs/litepowers/project-map.md` from actual implementation.
 
 Do not require unrelated verification. Evidence must match changed surfaces and risk profile.
 
 ## Reference
 
 Read `references/completion-evidence-checklist.md`.
+For implementation learning and skill feedback formats, read package doc `docs/implementation-learning-log-format.md`.

@@ -21,6 +21,7 @@ Bug work starts with `systematic-debugging-unity-lite`.
 
 - Read `docs/litepowers` before planning new Unity work.
 - Keep main docs and feature docs consistent.
+- Capture reusable failed attempts, workarounds, and skill update candidates in feature `implementation-log.md`; distill them into `skill-feedback.md` during completion checks.
 - Use MCPForUnity as the primary Unity Editor evidence path.
 - Use TDD only when `risk-based-verification-unity` marks it required.
 - Verify Unity scene, prefab, UI, animation, physics, package, and settings surfaces with appropriate evidence.

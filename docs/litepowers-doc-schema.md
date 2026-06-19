@@ -8,6 +8,7 @@ docs/litepowers/
   game-design.md
   technical-plan.md
   project-map.md
+  skill-feedback.md
   context/
     unity-project-profile.md
   features/
@@ -17,6 +18,7 @@ docs/litepowers/
       game-design.md
       implementation-plan.md
       verification.md
+      implementation-log.md
       iterations/
         YYYY-MM-DD-HHmmss-idea.md
         YYYY-MM-DD-HHmmss-game-design.md
@@ -29,6 +31,7 @@ docs/litepowers/
 - `game-design.md`: GDD Lite and gameplay system design.
 - `technical-plan.md`: Unity implementation architecture, milestones, task template, risk plan.
 - `project-map.md`: current implemented structure after completion checks.
+- `skill-feedback.md`: distilled reusable lessons from implementation logs for future skill updates.
 - `context/unity-project-profile.md`: Unity version, pipeline, platform, bridge, package, test readiness.
 
 ## Feature Docs
@@ -42,6 +45,16 @@ docs/litepowers/features/YYYY-MM-DD-feature-name/
 ```
 
 Main docs are updated after approval or completion when the feature changes project-wide direction, GDD, technical architecture, or implemented structure.
+
+## Implementation Learning Log Rule
+
+Execution and debugging can append raw reusable learning to feature-local `implementation-log.md`.
+
+Log only failed attempts, unexpected Unity/tool behavior, useful workaround, repeated friction, or concrete skill update candidates. Do not log routine successful edits.
+
+Completion checks read feature `implementation-log.md` and append only distilled reusable lessons to root `skill-feedback.md`.
+
+If work has no feature folder and produces log-worthy learning, select or create an appropriate feature folder before logging so raw notes stay near the work that produced them.
 
 ## Output Language Rule
 

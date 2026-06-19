@@ -23,10 +23,12 @@ Before asking scope, implementation, or evidence-choice questions, read package 
 4. Stop and update plan/docs if required work falls outside the ticket.
 5. Implement one task at a time.
 6. Run the evidence plan selected by `risk-based-verification-unity`.
-7. Update feature `verification.md`.
+7. Append reusable failed attempts, unexpected Unity/tool behavior, workarounds, or skill update candidates to feature `implementation-log.md`.
+8. Update feature `verification.md`.
 
 Do not edit shared serialized Unity surfaces in parallel.
 
 ## Reference
 
 For UI/scene/prefab evidence, read `references/mcpforunity-ui-scene-playbook.md`.
+For implementation learning log format, read package doc `docs/implementation-learning-log-format.md`.
