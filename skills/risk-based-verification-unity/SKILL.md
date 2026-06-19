@@ -34,7 +34,9 @@ TDD required = deterministic result + cheap automated setup + high regression co
 - Existing test seam: yes/no
 - Editor/runtime wiring risk: low/medium/high
 - Architecture/pattern fit risk: low/medium/high
+- DOTS/ECS surface risk: none/low/medium/high
 - Pattern/SOLID verification required: yes/no
+- DOTS/ECS verification required: yes/no
 - TDD decision: tdd_required | test_recommended | evidence_only | manual_observation
 - Evidence plan:
 - Completion gate:
@@ -47,6 +49,7 @@ TDD required = deterministic result + cheap automated setup + high regression co
 - `evidence_only`: scene, prefab, UI, animation, package, settings, or wiring evidence dominates.
 - `manual_observation`: camera feel, combat feel, VFX/SFX timing, UI visual quality, device performance.
 - Pattern/SOLID verification is independent from TDD.
+- DOTS/ECS verification is independent from TDD and required when Entities packages, baking, ECS systems, structural changes, Jobs/Burst hot paths, or entity runtime state are changed.
 
 ## References
 

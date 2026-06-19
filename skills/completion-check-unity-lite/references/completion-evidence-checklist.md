@@ -24,3 +24,4 @@ Update `docs/litepowers/project-map.md` after implementation with:
 - Mermaid architecture diagram
 - Mermaid scene flow diagram
 - pattern map: system, pattern/SOLID reason, files, evidence
+- DOTS/ECS map when used: systems, components, baking path, GameObject boundary, package versions, evidence

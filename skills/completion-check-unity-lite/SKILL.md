@@ -21,10 +21,11 @@ Before asking completion, exception, or follow-up choice questions, read package
 2. Confirm each surface received required evidence.
 3. Confirm `tdd_required` tasks have RED/GREEN evidence.
 4. Confirm implementation still matches Architecture / Pattern Fit and Pattern / SOLID Verification.
-5. Confirm MCPForUnity target identity is fresh enough for Editor-backed claims.
-6. Record console/import/test/smoke/manual observation evidence.
-7. Update feature `verification.md`.
-8. Update `docs/litepowers/project-map.md` from actual implementation.
+5. Confirm DOTS/ECS evidence when Entities packages, baking, ECS systems, structural changes, Jobs/Burst hot paths, or entity runtime state changed.
+6. Confirm MCPForUnity target identity is fresh enough for Editor-backed claims.
+7. Record console/import/test/smoke/manual observation evidence.
+8. Update feature `verification.md`.
+9. Update `docs/litepowers/project-map.md` from actual implementation.
 
 Do not require unrelated verification. Evidence must match changed surfaces and risk profile.
 

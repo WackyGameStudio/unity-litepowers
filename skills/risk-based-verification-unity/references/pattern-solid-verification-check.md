@@ -14,6 +14,8 @@ Use for medium or high architecture/pattern fit risk.
 - Lifecycle: Are Unity `Awake`, `OnEnable`, `Start`, `Update`, `OnDisable`, `OnDestroy` effects considered?
 - Events: Are publisher, subscriber, naming, subscribe, unsubscribe, and debug trace clear?
 - Performance patterns: Are Object Pool, Flyweight, Dirty Flag backed by measurement or clear load risk?
+- DOTS/ECS: Is DOTS/ECS or Jobs/Burst justified by scale, CPU, determinism, streaming, or multiplayer pressure?
+- DOTS boundary: Are GameObject authoring/presentation and ECS runtime ownership clearly separated?
 
 ## Completion Evidence
 

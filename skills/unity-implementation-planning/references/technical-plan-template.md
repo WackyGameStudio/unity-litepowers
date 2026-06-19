@@ -12,6 +12,19 @@
 
 ## Architecture / SOLID / Pattern Fit
 
+## DOTS / ECS Suitability
+
+- Candidate: none | Jobs/Burst only | hybrid ECS | ECS-first
+- Trigger pressure:
+- Rejected approach:
+- GameObject boundary:
+- Authoring/Baking path:
+- Runtime data ownership:
+- Structural changes / ECB need:
+- Package impact:
+- Debugging and inspection path:
+- Verification evidence:
+
 ## Scene Structure
 
 ## Global Services Lifecycle

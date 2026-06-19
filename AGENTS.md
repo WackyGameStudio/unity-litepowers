@@ -16,5 +16,6 @@ Keep skills concise. Put heavy checklists, templates, MCPForUnity routing, archi
 - MCPForUnity is the primary Unity Editor evidence path.
 - TDD is automatic only when deterministic result, cheap automated setup, and high regression cost justify it.
 - Implementation planning and completion checks verify SOLID and Unity design pattern fit.
+- Implementation planning considers DOTS/ECS through a suitability gate, not as a default architecture.
 - Decision questions present exactly two suitable options, recommend one, and explain the reason.
 - User-facing outputs and generated project docs match the user's language; keep English technical terms when more exact.

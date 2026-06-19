@@ -17,5 +17,6 @@ Use this as fit check, not as checklist to apply every pattern.
 | frequent spawn/despawn | Object Pool | allocation/GC/lifecycle risk | low volume | pool lifecycle smoke/profiler |
 | shared static data | Flyweight/ScriptableObject | duplicated immutable data | per-instance mutable state | asset inspection |
 | expensive repeated recalculation | Dirty Flag | recompute only when changed | stale state risk unmanaged | dirty/clean tests |
+| large entity count / CPU hot path / deterministic simulation / streaming | DOTS/ECS or Jobs/Burst | same rules over large data, clear GameObject boundary | low volume, UI/animation/authored behavior dominates | DOTS suitability gate, profiler or entity runtime evidence |
 
 Record selected patterns, rejected patterns, and overengineering risk.
