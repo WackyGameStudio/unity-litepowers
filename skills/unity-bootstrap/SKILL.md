@@ -7,6 +7,10 @@ description: Use when a Unity project needs Litepowers readiness checks, Unity v
 
 Prepare or verify the Unity work surface. Ask approval before project mutation.
 
+## Question Rule
+
+Before asking mutation or setup-choice questions, read package doc `docs/guided-questioning-protocol.md`.
+
 ## Checklist
 
 1. Confirm Unity project markers: `Assets/`, `Packages/manifest.json`, `ProjectSettings/ProjectVersion.txt`.

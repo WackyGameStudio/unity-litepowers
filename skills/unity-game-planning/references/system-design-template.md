@@ -22,6 +22,14 @@
 
 ## Verification Notes
 
+## Question Log
+
+- Current situation:
+- Options considered:
+- Recommendation:
+- User answer:
+- Evidence:
+
 ## Handoff
 
 - Stage status:

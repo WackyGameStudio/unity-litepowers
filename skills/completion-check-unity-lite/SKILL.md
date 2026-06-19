@@ -7,6 +7,10 @@ description: Use when about to claim Unity Litepowers work is complete, fixed, p
 
 Fresh evidence before completion claims.
 
+## Question Rule
+
+Before asking completion, exception, or follow-up choice questions, read package doc `docs/guided-questioning-protocol.md`.
+
 ## Checklist
 
 1. List changed surfaces.

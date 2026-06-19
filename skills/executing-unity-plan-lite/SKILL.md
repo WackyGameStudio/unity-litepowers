@@ -7,6 +7,10 @@ description: Use when executing an approved Unity Litepowers implementation plan
 
 Execute approved plans task by task.
 
+## Question Rule
+
+Before asking scope, implementation, or evidence-choice questions, read package doc `docs/guided-questioning-protocol.md`.
+
 ## Rules
 
 1. Read current implementation plan or task ticket.

@@ -43,6 +43,18 @@ docs/litepowers/features/YYYY-MM-DD-feature-name/
 
 Main docs are updated after approval or completion when the feature changes project-wide direction, GDD, technical architecture, or implemented structure.
 
+## Question Log Rule
+
+Planning docs should include a `## Question Log` section when user decisions shape scope, design, architecture, verification, or handoff.
+
+Each entry records:
+
+- current situation summary
+- two options considered
+- recommendation and reason
+- user answer
+- evidence source when docs, source, Unity Editor, or web search informed the options
+
 ## Feature Collision Rule
 
 - `feature.md` stores title, slug, created, status, latest canonical docs, and main docs merge status.

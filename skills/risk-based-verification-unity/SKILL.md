@@ -7,6 +7,10 @@ description: Use when deciding verification strength for Unity Litepowers tasks,
 
 Choose evidence. Do not force one verification style.
 
+## Question Rule
+
+Before asking verification-choice questions, read package doc `docs/guided-questioning-protocol.md`.
+
 ## Decision
 
 ```text

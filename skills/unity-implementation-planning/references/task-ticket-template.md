@@ -27,6 +27,14 @@
 
 ## Verification Profile
 
+## Decision Questions
+
+- Current situation:
+- Options considered:
+- Recommendation:
+- User answer:
+- Evidence:
+
 ## Pattern / SOLID Verification
 
 - Does the plan split responsibilities at the right Unity boundary?

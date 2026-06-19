@@ -25,3 +25,4 @@ Bug work starts with `systematic-debugging-unity-lite`.
 - Use TDD only when `risk-based-verification-unity` marks it required.
 - Verify Unity scene, prefab, UI, animation, physics, package, and settings surfaces with appropriate evidence.
 - Verify implementation plans against SOLID and Unity design pattern fit.
+- Ask decision questions with exactly two suitable options, a recommendation, and a reason.

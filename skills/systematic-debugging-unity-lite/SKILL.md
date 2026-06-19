@@ -7,6 +7,10 @@ description: Use when investigating Unity bugs, regressions, unexpected behavior
 
 Find root surface before fixing.
 
+## Question Rule
+
+Before asking repro, scope, or fix-choice questions, read package doc `docs/guided-questioning-protocol.md`.
+
 ## Process
 
 1. Reproduce or define the symptom.
