@@ -7,6 +7,10 @@ description: Use when about to claim Unity Litepowers work is complete, fixed, p
 
 Fresh evidence before completion claims.
 
+## Output Language Rule
+
+Before user-facing output or generated docs, read package doc `docs/output-language-policy.md`.
+
 ## Question Rule
 
 Before asking completion, exception, or follow-up choice questions, read package doc `docs/guided-questioning-protocol.md`.

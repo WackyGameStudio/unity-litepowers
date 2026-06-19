@@ -7,6 +7,10 @@ description: Use when a Unity project needs Litepowers readiness checks, Unity v
 
 Prepare or verify the Unity work surface. Ask approval before project mutation.
 
+## Output Language Rule
+
+Before user-facing output or generated docs, read package doc `docs/output-language-policy.md`.
+
 ## Question Rule
 
 Before asking mutation or setup-choice questions, read package doc `docs/guided-questioning-protocol.md`.

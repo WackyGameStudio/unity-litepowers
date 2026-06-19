@@ -2,6 +2,8 @@
 
 Use this before asking planning, design, architecture, verification, or handoff questions.
 
+Also read `docs/output-language-policy.md` before presenting the question.
+
 ## Grounding
 
 Start from current context:

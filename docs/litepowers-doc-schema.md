@@ -43,6 +43,10 @@ docs/litepowers/features/YYYY-MM-DD-feature-name/
 
 Main docs are updated after approval or completion when the feature changes project-wide direction, GDD, technical architecture, or implemented structure.
 
+## Output Language Rule
+
+User-facing outputs and generated project docs match the user's primary language. Keep English terms when they are technical identifiers, Unity/API names, code symbols, file paths, package/tool names, logs, errors, Git refs, or standard pattern/SOLID names.
+
 ## Question Log Rule
 
 Planning docs should include a `## Question Log` section when user decisions shape scope, design, architecture, verification, or handoff.

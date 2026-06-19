@@ -17,3 +17,4 @@ Keep skills concise. Put heavy checklists, templates, MCPForUnity routing, archi
 - TDD is automatic only when deterministic result, cheap automated setup, and high regression cost justify it.
 - Implementation planning and completion checks verify SOLID and Unity design pattern fit.
 - Decision questions present exactly two suitable options, recommend one, and explain the reason.
+- User-facing outputs and generated project docs match the user's language; keep English technical terms when more exact.

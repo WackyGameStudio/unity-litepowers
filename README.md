@@ -26,3 +26,4 @@ Bug work starts with `systematic-debugging-unity-lite`.
 - Verify Unity scene, prefab, UI, animation, physics, package, and settings surfaces with appropriate evidence.
 - Verify implementation plans against SOLID and Unity design pattern fit.
 - Ask decision questions with exactly two suitable options, a recommendation, and a reason.
+- Match user-facing outputs and generated project docs to the user's language, while preserving exact English technical terms.

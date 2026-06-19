@@ -7,6 +7,10 @@ description: Use when investigating Unity bugs, regressions, unexpected behavior
 
 Find root surface before fixing.
 
+## Output Language Rule
+
+Before user-facing output or generated docs, read package doc `docs/output-language-policy.md`.
+
 ## Question Rule
 
 Before asking repro, scope, or fix-choice questions, read package doc `docs/guided-questioning-protocol.md`.

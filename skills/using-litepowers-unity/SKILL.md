@@ -11,9 +11,10 @@ Route Unity work through the smallest needed Litepowers skill.
 
 1. Search `docs/litepowers` and related `features/**`.
 2. Check `docs/litepowers/context/unity-project-profile.md`.
-3. Read package doc `docs/guided-questioning-protocol.md` before asking planning or choice questions.
-4. If Unity project identity or MCPForUnity state is unknown, use `unity-bootstrap`.
-5. Choose next skill:
+3. Read package doc `docs/output-language-policy.md` before user-facing output or generated docs.
+4. Read package doc `docs/guided-questioning-protocol.md` before asking planning or choice questions.
+5. If Unity project identity or MCPForUnity state is unknown, use `unity-bootstrap`.
+6. Choose next skill:
 
 | Request | Next skill |
 | --- | --- |
@@ -32,3 +33,4 @@ Route Unity work through the smallest needed Litepowers skill.
 - Do not force TDD. Use `risk-based-verification-unity` to decide.
 - Do verify SOLID and Unity design pattern fit for implementation plans and completion checks.
 - For decision questions, present exactly two context-suitable options, recommend one, and state why.
+- Match output language to the user; keep exact English technical terms where clearer.

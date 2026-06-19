@@ -7,6 +7,10 @@ description: Use when executing an approved Unity Litepowers implementation plan
 
 Execute approved plans task by task.
 
+## Output Language Rule
+
+Before user-facing output or generated docs, read package doc `docs/output-language-policy.md`.
+
 ## Question Rule
 
 Before asking scope, implementation, or evidence-choice questions, read package doc `docs/guided-questioning-protocol.md`.
