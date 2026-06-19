@@ -1,6 +1,6 @@
 ---
 name: using-litepowers-unity
-description: Use when starting any Unity game development request in a project that uses Unity Litepowers, including new game ideas, feature planning, implementation, debugging, verification, docs updates, scene/prefab/UI work, or MCPForUnity-backed Unity Editor work.
+description: Use when starting any Unity game development request in a project that uses Unity Litepowers, including new game ideas, feature planning, implementation, debugging, verification, docs updates, Handoff-based routing, scene/prefab/UI work, or MCPForUnity-backed Unity Editor work.
 ---
 
 # Using Unity Litepowers
@@ -14,7 +14,9 @@ Route Unity work through the smallest needed Litepowers skill.
 3. Read package doc `docs/output-language-policy.md` before user-facing output or generated docs.
 4. Read package doc `docs/guided-questioning-protocol.md` before asking planning or choice questions.
 5. If Unity project identity or MCPForUnity state is unknown, use `unity-bootstrap`.
-6. Choose next skill:
+6. Inspect latest Handoff blocks in relevant main docs, feature canonical docs, and newest feature `iterations/**`.
+7. If latest Handoff is `blocked`, `draft`, `Ready to continue: no`, or not user-approved, route back to the same phase or the phase that owns the open decision.
+8. Choose next skill only when Handoff state allows progress:
 
 | Request | Next skill |
 | --- | --- |
@@ -29,6 +31,7 @@ Route Unity work through the smallest needed Litepowers skill.
 
 - Do not overwrite main docs with repeated planning drafts. Write timestamped iteration snapshots under `docs/litepowers/features/YYYY-MM-DD-feature-name/iterations/` first.
 - Use `feature.md` and numeric suffixes to avoid same-day same-slug collisions.
+- Do not advance past a planning phase unless the latest Handoff says `Ready to continue: yes` and the user approved it.
 - Do not trust Editor-backed claims until MCPForUnity target identity is confirmed.
 - Do not force TDD. Use `risk-based-verification-unity` to decide.
 - Do verify SOLID and Unity design pattern fit for implementation plans and completion checks.

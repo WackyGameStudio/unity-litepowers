@@ -26,6 +26,8 @@ Add the AGENTS rules from this package to the target project's `AGENTS.md`.
 
 Restart or refresh the coding agent if project-local skills are not discovered.
 
+This package is currently shaped for project-local skills. Plugin or marketplace distribution would also need package metadata such as a plugin manifest and optional skill UI metadata.
+
 ## Target Project Docs
 
 Create or preserve:

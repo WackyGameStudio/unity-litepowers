@@ -24,6 +24,12 @@ Turn project idea output into a GDD Lite or feature game-design draft.
 13. Save to main `game-design.md` only for first creation or approved main update.
 14. End with a Handoff block that names `unity-implementation-planning` when ready.
 
+## Scope Rule
+
+- For narrow features, keep unchanged or irrelevant required fields short: `unchanged`, `N/A`, or one sentence.
+- Expand only fields affected by the current idea, feature, or open decision.
+- Do not create broad GDD prose when the user asked for a small feature extension.
+
 ## Required Coverage
 
 - game overview

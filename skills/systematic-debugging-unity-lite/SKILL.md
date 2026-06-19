@@ -1,6 +1,6 @@
 ---
 name: systematic-debugging-unity-lite
-description: Use when investigating Unity bugs, regressions, unexpected behavior, console/import errors, scene or prefab wiring failures, PlayMode issues, package problems, MCPForUnity target mismatch, or serialized reference issues.
+description: Use when investigating Unity bugs, regressions, unexpected behavior, console/import errors, scene or prefab wiring failures, PlayMode issues, package problems, MCPForUnity target mismatch, serialized reference issues, or debugging lessons that should be captured in implementation-log.
 ---
 
 # Systematic Debugging Unity Lite

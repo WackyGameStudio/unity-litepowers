@@ -99,6 +99,8 @@ Every planning phase ends with:
 
 Continue to the recommended next skill only when `Ready to continue: yes` and the user approved the phase.
 
+Routers must inspect the latest Handoff in relevant main docs, feature canonical docs, and newest feature iteration before choosing the next skill. If the latest Handoff is `blocked`, `draft`, `Ready to continue: no`, or not user-approved, resume the phase that owns the open decision instead of advancing.
+
 ## Project Map Rule
 
 Planning does not pre-edit `project-map.md`. Completion checks update it from actual implementation evidence.

@@ -1,6 +1,6 @@
 ---
 name: completion-check-unity-lite
-description: Use when about to claim Unity Litepowers work is complete, fixed, passing, ready, or verified, including code, scene, prefab, UI, package, settings, docs, MCPForUnity evidence, TDD-required tasks, and Pattern/SOLID verification.
+description: Use when about to claim Unity Litepowers work is complete, fixed, passing, ready, or verified, including code, scene, prefab, UI, package, settings, docs, MCPForUnity evidence, TDD-required tasks, Pattern/SOLID verification, project-map updates, or distilling implementation-log lessons into skill-feedback.
 ---
 
 # Completion Check Unity Lite

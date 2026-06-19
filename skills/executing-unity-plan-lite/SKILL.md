@@ -1,6 +1,6 @@
 ---
 name: executing-unity-plan-lite
-description: Use when executing an approved Unity Litepowers implementation plan or task ticket, especially when code, scene, prefab, UI, asset, package, settings, docs, MCPForUnity evidence, or feature verification updates are involved.
+description: Use when executing an approved Unity Litepowers implementation plan or task ticket, especially when code, scene, prefab, UI, asset, package, settings, docs, MCPForUnity evidence, feature verification updates, or feature implementation-log capture are involved.
 ---
 
 # Executing Unity Plan Lite
