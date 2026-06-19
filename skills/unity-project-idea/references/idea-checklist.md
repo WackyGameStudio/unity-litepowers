@@ -1,0 +1,21 @@
+# Idea Checklist
+
+- one-line pitch
+- player promise, 1-3 items
+- core emotion
+- target player
+- platform
+- input method
+- camera/view
+- core loop
+- session structure
+- MVP content scope
+- out of scope
+- art direction
+- sound direction
+- monetization/operation assumptions
+- online/offline assumptions
+- save assumptions
+- Unity technical assumptions
+- major risks
+- first prototype goal
