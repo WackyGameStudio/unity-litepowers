@@ -12,6 +12,21 @@
 
 ## Architecture / SOLID / Pattern Fit
 
+- Default C# architecture depth triggers:
+  - `routine`:
+  - `focused`:
+  - `migration`:
+- Stable behavior invariants:
+- MonoBehaviour/plain-C# responsibility boundaries:
+- Dependency/asmdef direction:
+- Composition roots and concrete selection points:
+- Lifecycle ownership conventions:
+- Serialized wiring policy:
+- ScriptableObject config/runtime-state policy:
+- Selected architecture approaches:
+- Rejected architecture approaches:
+- Architecture evidence policy:
+
 ## DOTS / ECS Suitability
 
 - Candidate: none | Jobs/Burst only | hybrid ECS | ECS-first

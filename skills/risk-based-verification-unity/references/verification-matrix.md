@@ -15,6 +15,12 @@
 | animation | Animator param/clip wiring and PlayMode/manual smoke |
 | performance | profiler or device build evidence |
 | package/settings | import/compile/console evidence |
+| component split / serialized migration | compile/import, affected prefab/scene refs, missing-reference/orphan-component check, behavior smoke |
+| event topology | publisher/subscriber review, enable-disable-destroy exact-once smoke, console evidence |
+| state machine | transition tests or PlayMode transition/re-entry smoke |
+| ScriptableObject config/runtime ownership | asset inspection, two-instance runtime smoke, reload/reset evidence |
+| composition root / factory | selected implementation inspection, spawn/selection smoke, missing-selection failure review |
+| asmdef/API boundary | compile, dependent caller evidence, dependency direction review |
 | Jobs/Burst hot path | Burst compile/import evidence, deterministic result check, profiler or timing evidence |
 | Entities/DOTS package | package manifest/import/compile evidence, console evidence |
 | ECS authoring/baking | Baker/SubScene/entity prefab evidence, baking output or Entity Hierarchy/Inspector evidence |

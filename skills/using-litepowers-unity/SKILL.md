@@ -35,5 +35,7 @@ Route Unity work through the smallest needed Litepowers skill.
 - Do not trust Editor-backed claims until MCPForUnity target identity is confirmed.
 - Do not force TDD. Use `risk-based-verification-unity` to decide.
 - Do verify SOLID and Unity design pattern fit for implementation plans and completion checks.
+- C# changes to public contracts, responsibility ownership, state/event topology, lifecycle, `ScriptableObject` ownership, or serialized prefab/scene wiring require an approved implementation plan with a C# Architecture Profile before execution.
+- Do not route every C# edit through full architecture planning; routine local edits need only depth, behavior invariant, local/no-pattern decision, and targeted evidence.
 - For decision questions, present exactly two context-suitable options, recommend one, and state why.
 - Match output language to the user; keep exact English technical terms where clearer.

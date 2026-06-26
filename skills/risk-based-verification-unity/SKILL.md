@@ -33,11 +33,15 @@ TDD required = deterministic result + cheap automated setup + high regression co
 - High regression cost: yes/no
 - Existing test seam: yes/no
 - Editor/runtime wiring risk: low/medium/high
+- Architecture depth: routine/focused/migration
 - Architecture/pattern fit risk: low/medium/high
 - DOTS/ECS surface risk: none/low/medium/high
+- Behavior invariants:
+- Architecture failure modes:
 - Pattern/SOLID verification required: yes/no
 - DOTS/ECS verification required: yes/no
 - TDD decision: tdd_required | test_recommended | evidence_only | manual_observation
+- Architecture evidence:
 - Evidence plan:
 - Completion gate:
 ```
@@ -49,6 +53,8 @@ TDD required = deterministic result + cheap automated setup + high regression co
 - `evidence_only`: scene, prefab, UI, animation, package, settings, or wiring evidence dominates.
 - `manual_observation`: camera feel, combat feel, VFX/SFX timing, UI visual quality, device performance.
 - Pattern/SOLID verification is independent from TDD.
+- Architecture risk is driven by contracts, lifecycle, state/event topology, data ownership, asmdef/API direction, and serialized wiring, not pattern count.
+- Medium/high architecture risk reads `references/csharp-architecture-evidence-matrix.md` and binds failure modes to evidence.
 - DOTS/ECS verification is independent from TDD and required when Entities packages, baking, ECS systems, structural changes, Jobs/Burst hot paths, or entity runtime state are changed.
 
 ## References
@@ -56,3 +62,4 @@ TDD required = deterministic result + cheap automated setup + high regression co
 - Verification matrix: `references/verification-matrix.md`
 - TDD suitability: `references/tdd-suitability-check.md`
 - Pattern/SOLID verification: `references/pattern-solid-verification-check.md`
+- C# architecture evidence: `references/csharp-architecture-evidence-matrix.md`

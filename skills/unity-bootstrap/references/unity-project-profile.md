@@ -30,6 +30,17 @@
 - technical-plan.md:
 - project-map.md:
 
+## C# Architecture Context
+
+- asmdef/dependency direction:
+- composition roots / DI / service locator:
+- state/event conventions:
+- ScriptableObject config/runtime conventions:
+- serialization/save compatibility:
+- domain reload / Enter Play Mode constraints:
+- lifecycle/order constraints:
+- available test seams:
+
 ## Notes
 
 - Package constraints:

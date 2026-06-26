@@ -30,6 +30,11 @@ MCPForUnity is the primary Unity Editor evidence path for Unity Litepowers.
 | scene | hierarchy/load/save evidence |
 | prefab | serialized references and prefab smoke |
 | asset/data | asset inspection |
+| component split | affected GameObjects/prefabs have required components and refs |
+| prefab/base/variant/scene migration | base prefab, variants, scene overrides, missing refs, orphan components |
+| lifecycle/event | PlayMode enable-disable-destroy/reload smoke and console |
+| ScriptableObject config/runtime | asset values, runtime instance behavior, reload/reset evidence |
+| composition root selection | selected implementation/component/asset inspection |
 | UI Toolkit | UI document/render/callback evidence |
 | uGUI | hierarchy, components, screenshot, callback evidence |
 | build settings | build settings inspection |

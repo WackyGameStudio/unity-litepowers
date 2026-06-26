@@ -29,6 +29,18 @@ Entry format:
 
 Keep entries short. Link or summarize evidence instead of pasting large logs.
 
+Architecture-related log-worthy tags:
+
+- `architecture:lifecycle-order`
+- `architecture:event-lifetime`
+- `architecture:prefab-migration`
+- `architecture:scriptableobject-shared-state`
+- `architecture:interface-wiring`
+- `architecture:state-overengineering`
+- `architecture:serialized-reference`
+
+Log architecture learning only when it is reusable: lifecycle order changed behavior, event subscription leaked or duplicated, prefab migration missed variants, `ScriptableObject` runtime state contaminated instances, interface wiring selected wrong concrete, State was rejected as overengineering after evidence, or serialized reference failure needed a repeatable fix. Do not log routine successful refactors.
+
 ## Skill Feedback Ledger
 
 During completion checks, distill reusable entries into:

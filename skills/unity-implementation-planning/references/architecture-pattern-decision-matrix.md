@@ -1,22 +1,24 @@
 # Architecture Pattern Decision Matrix
 
-Use this as fit check, not as checklist to apply every pattern.
+Use as fit check, not checklist. Start with `unity-csharp-architecture-guide.md` for architecture-sensitive C# work.
 
-| Problem pressure | First check | Good signal | Bad signal | Verification impact |
-| --- | --- | --- | --- | --- |
-| large MonoBehaviour | SRP, component split | separate reasons to change | split only by file count | scene/prefab refs compile |
-| new type changes switch | OCP, Strategy, Factory | variants are expected | one-off branch | unit/EditMode or spawn smoke |
-| subclass cannot honor parent | LSP, composition | all child types honor contract | empty/throwing overrides | API review and tests |
-| interface keeps growing | ISP | optional capability | every consumer sees unrelated members | implementer review |
-| logic depends on concrete source | DIP | player/AI/replay/network vary | one stable source | test double or PlayMode smoke |
-| mode behavior | State | transitions matter | boolean branch is enough | transition tests or smoke |
-| decoupled reaction | Observer/event | publisher should not know listener | direct call is clearer | subscribe/unsubscribe evidence |
-| undo/replay/input buffer | Command | action history matters | no replay/undo need | command tests |
-| complex UI data flow | MVP | UI and model logic mixed | tiny static UI | presenter tests or UI smoke |
-| UI Toolkit binding | MVVM | binding reduces repeated updates | UGUI/simple UI | binding evidence |
-| frequent spawn/despawn | Object Pool | allocation/GC/lifecycle risk | low volume | pool lifecycle smoke/profiler |
-| shared static data | Flyweight/ScriptableObject | duplicated immutable data | per-instance mutable state | asset inspection |
-| expensive repeated recalculation | Dirty Flag | recompute only when changed | stale state risk unmanaged | dirty/clean tests |
-| large entity count / CPU hot path / deterministic simulation / streaming | DOTS/ECS or Jobs/Burst | same rules over large data, clear GameObject boundary | low volume, UI/animation/authored behavior dominates | DOTS suitability gate, profiler or entity runtime evidence |
+| Problem pressure | Simplest first option | Candidate pattern/principle | Good signal | Bad signal | Ownership/selection decision | Primary failure modes | Minimum evidence |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Separate reasons to change inside one `MonoBehaviour` | local method extraction or one component boundary | SRP/component split | input, movement, feedback, data, or presentation change independently | split only by file/class size | responsibility owner and lifecycle phase | timing drift, missing component, broken refs | compile/import plus affected prefab/scene refs and behavior invariant |
+| New variant keeps changing a switch | keep direct branch if variant count is stable | OCP, capability interface, Strategy, Factory | likely variants share caller expectation | one-off branch | consumer contract and concrete selection point | wrong implementation, broad interface, stale switch | contract/substitution evidence plus selection/wiring smoke |
+| Subclass cannot honor base behavior | composition or smaller base contract | LSP, composition | all subtypes preserve base invariant | empty/throwing overrides, subtype casts | base invariant owner and hook contract | hidden lifecycle dependency, invalid substitution | API review plus representative subtype tests/smoke |
+| Interface keeps growing | split local callers or concrete dependency | ISP/capability interface | optional capability has clear consumer | every consumer sees unrelated members | minimal member owner and implementer obligations | broad contract, fake implementation | implementer review and caller evidence |
+| Logic depends on concrete scene/input source | direct concrete link if single source is stable | DIP/Strategy | player/AI/replay/network vary or deterministic rule needs seam | speculative second implementation | composition root, prefab, or factory chooses concrete | wrong selection, hidden service lookup | substitution test or PlayMode smoke with selected concrete |
+| Mode behavior and transitions grow | named branch or table | State | illegal flag combos, mode-specific rules, `Enter`/`Exit` side effects | simple boolean branch is enough | transition guard owner and re-entry policy | stuck state, oscillation, invalid transition | transition tests or PlayMode smoke |
+| Decoupled reaction or duplicated event meaning | direct call or local event | Observer/event, semantic event, Adapter-like translation | publisher should not know listener, duplicated condition becomes semantic event | global event bus by default | publisher, subscriber, subscribe/unsubscribe phase | duplicate callback, destroyed listener receives event | exact-once and enable/disable/destroy evidence |
+| Undo/replay/input buffer | direct command call | Command | action history, queue, replay, or rollback matters | no history/replay need | command owner and serialization/replay boundary | stale command state, wrong ordering | command tests and replay/queue evidence |
+| Complex UI data flow | direct view script | MVP | UI and model logic change independently | tiny static UI | presenter/model/view owner | callback drift, stale model | presenter tests or UI smoke |
+| UI Toolkit binding pressure | direct update binding | MVVM | binding removes repeated view refresh paths | uGUI/simple UI | view-model state owner | stale binding, double callback | binding/render/callback evidence |
+| Frequent spawn/despawn | direct instantiate/destroy | Object Pool | allocation/GC/lifecycle risk or high frequency | low volume | pool owner and reset owner | stale pooled state, missing reset | pool lifecycle smoke/profiler |
+| Duplicated immutable data | serialized config asset | Flyweight/`ScriptableObject` config | immutable shared tuning/config | per-instance mutable state in asset | config owner vs runtime-state owner | cross-instance contamination | asset inspection and two-instance/reload evidence |
+| Expensive repeated recalculation | recompute directly | Dirty Flag/cache | recompute cost and invalidation are clear | stale state risk unmanaged | invalidation owner | stale cache | dirty/clean tests |
+| Large entity count, CPU hot path, determinism, streaming, or multiplayer pressure | GameObject architecture, pooling, or Jobs/Burst only | DOTS/ECS or Jobs/Burst | same rules over large data and clear GameObject boundary | low volume or authored behavior dominates | GameObject authoring vs ECS runtime owner | baking/runtime mismatch, inspectability gap | DOTS suitability gate, profiler or entity runtime evidence |
 
-Record selected patterns, rejected patterns, and overengineering risk.
+Reject interface-per-class, one-off Strategy/Factory, State for trivial branches, default global event bus, mutable shared `ScriptableObject` runtime state, line-count SRP, composition absolutism, and pattern quotas.
+
+Record selected patterns, rejected simpler approaches, pressure per pattern, owner/selection decision, and evidence.

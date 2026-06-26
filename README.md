@@ -26,6 +26,12 @@ Bug work starts with `systematic-debugging-unity-lite`.
 - Use TDD only when `risk-based-verification-unity` marks it required.
 - Verify Unity scene, prefab, UI, animation, physics, package, and settings surfaces with appropriate evidence.
 - Verify implementation plans against SOLID and Unity design pattern fit.
+- Use the conditional Clean C# Architecture Track inside the existing flow; it is not a new public skill.
+- Record behavior invariants and change pressure before choosing patterns.
+- Treat Unity lifecycle, prefab/scene wiring, and serialization as architecture surfaces.
+- Use `routine | focused | migration` depth so local edits stay terse while architecture-sensitive work records ownership, lifecycle, wiring, selected/rejected approaches, and evidence.
+- Do not use blanket TDD, pattern quotas, interface-per-class, composition-only, or blanket plain-C# extraction.
+- Keep planning, execution, verification, debugging, and completion on one pressure-first architecture contract.
 - Consider DOTS/ECS through a suitability gate for scale, CPU, determinism, streaming, or multiplayer pressure.
 - Ask decision questions with exactly two suitable options, a recommendation, and a reason.
 - Match user-facing outputs and generated project docs to the user's language, while preserving exact English technical terms.

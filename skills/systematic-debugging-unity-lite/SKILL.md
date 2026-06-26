@@ -21,10 +21,13 @@ Before asking repro, scope, or fix-choice questions, read package doc `docs/guid
 2. Collect console/import/package/scene/prefab/runtime evidence.
 3. Confirm MCPForUnity target identity for Editor-backed evidence.
 4. Classify root surface.
-5. If deterministic, cheap, and high regression cost, add regression test.
-6. Otherwise record minimal repro and evidence-only gate.
-7. Write fix plan before changing code or assets.
-8. Append reusable failed hypotheses, root cause, working fix, or skill update candidates to feature `implementation-log.md`.
+5. For architecture-shaped symptoms, classify event lifetime, State transition, lifecycle order, shared mutable data, composition-root selection, or serialized migration surface before changing structure.
+6. If deterministic, cheap, and high regression cost, add regression test.
+7. Otherwise record minimal repro and evidence-only gate.
+8. Write fix plan before changing code or assets.
+9. Append reusable failed hypotheses, root cause, working fix, or skill update candidates to feature `implementation-log.md`.
+
+Do not turn a minimal bug fix into an unapproved architecture rewrite.
 
 ## Reference
 

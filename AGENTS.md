@@ -17,6 +17,10 @@ Keep skills concise. Put heavy checklists, templates, MCPForUnity routing, archi
 - MCPForUnity is the primary Unity Editor evidence path.
 - TDD is automatic only when deterministic result, cheap automated setup, and high regression cost justify it.
 - Implementation planning and completion checks verify SOLID and Unity design pattern fit.
+- Keep C# architecture pressure-first and evidence-bound: record behavior invariants before patterns, select `routine | focused | migration` depth, and tie lifecycle/serialized/event/data ownership to evidence.
+- Keep routine C# work terse. Put detailed ownership, lifecycle, serialized migration, and pattern evidence rules in `references/` and require them only for focused/migration work.
+- Do not enforce pattern quotas, class-size quotas, interface-per-class, composition-only, or blanket plain-C# extraction.
+- Do not copy runtime code from external teaching repositories into this skill package; independently restate decision rules and preserve license boundaries.
 - Implementation planning considers DOTS/ECS through a suitability gate, not as a default architecture.
 - Decision questions present exactly two suitable options, recommend one, and explain the reason.
 - User-facing outputs and generated project docs match the user's language; keep English technical terms when more exact.

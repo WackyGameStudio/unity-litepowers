@@ -12,6 +12,14 @@
 
 ## Required Unity Surfaces
 
+## Architecture Checkpoints
+
+- Shared behavior invariants:
+- Migration order:
+- Serialized batches:
+- Stop/replan triggers:
+- Exit evidence:
+
 ## Risk-Based Verification
 
 ## Docs Updates

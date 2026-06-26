@@ -60,6 +60,18 @@ If work has no feature folder and produces log-worthy learning, select or create
 
 User-facing outputs and generated project docs match the user's primary language. Keep English terms when they are technical identifiers, Unity/API names, code symbols, file paths, package/tool names, logs, errors, Git refs, or standard pattern/SOLID names.
 
+## C# Architecture Track Rule
+
+C# architecture guidance is conditional.
+
+- `technical-plan.md` records stable project policy: depth triggers, dependency direction, lifecycle conventions, serialized wiring policy, and evidence policy.
+- Feature `implementation-plan.md` and task tickets record intended change: depth, behavior invariants, change pressure, ownership, lifecycle, serialized wiring, selected/rejected approaches, and migration/rollback when needed.
+- `verification.md` records evidence for behavior invariants, architecture failure modes, lifecycle, event, data ownership, and serialized wiring.
+- `project-map.md` is updated only after actual completion evidence.
+- `implementation-log.md` stores reusable architecture failures/learnings, not routine successful refactors.
+
+Do not create a mandatory separate target-project architecture document for this track.
+
 ## Question Log Rule
 
 Planning docs should include a `## Question Log` section when user decisions shape scope, design, architecture, verification, or handoff.
